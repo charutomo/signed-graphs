@@ -50,3 +50,48 @@ p {
   background-color: #F4C2C2;
   color: white;
 }
+
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.accordion {
+  background-color: #e59e9d;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ffdfdd;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #e59e9d;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #ffdfdd;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
